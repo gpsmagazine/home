@@ -106,4 +106,68 @@
 
 </html>
 
-<center id="book"><a href="https://online.flippingbook.com/view/330929/" class="fbo-embed" data-fbo-id="330929" data-fbo-lightbox="yes" data-fbo-width="1200px" data-fbo-height="1080px" data-fbo-version="1" style="max-width: 100%">Welcome Guide to FlippingBook Online</a><script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=330929"></script></center> 
+<center id="book"><a href="https://online.flippingbook.com/view/330929/" class="fbo-embed" data-fbo-id="330929" data-fbo-lightbox="yes" data-fbo-width="1200px" data-fbo-height="1080px" data-fbo-version="1" style="max-width: 100%">Welcome Guide to FlippingBook Online</a><script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=330929"></script></center>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 
+
