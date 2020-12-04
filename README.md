@@ -1,1 +1,1 @@
-This respository contains files essential and codes essential for another wbesite
+This respository contains files and codes essential for powering an element on another wbesite
